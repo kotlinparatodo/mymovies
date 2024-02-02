@@ -1,0 +1,23 @@
+CREATE TABLE Movie (
+    id INTEGER NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    overview TEXT NOT NULL,
+    release TEXT NOT NULL,
+    posterPath TEXT NOT NULL,
+    backdropPath TEXT NOT NULL,
+    originalLanguage TEXT NOT NULL,
+    originalTitle TEXT NOT NULL,
+    popularity: Double,
+    voteAverage: Double,
+    favorite INTEGER AS Boolean DEFAULT FALSE
+
+    flightNumber INTEGER NOT NULL,
+    missionName TEXT NOT NULL,
+    launchYear INTEGER AS Int NOT NULL DEFAULT 0,
+    rocketId TEXT NOT NULL,
+    details TEXT,
+    launchSuccess INTEGER AS Boolean DEFAULT NULL,
+    launchDateUTC TEXT NOT NULL,
+    missionPatchUrl TEXT,
+    articleUrl TEXT
+);
